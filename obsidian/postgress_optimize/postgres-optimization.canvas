@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"b10c9160c1f6310b","type":"text","text":"fazer também um comparativo com uso de index em querys de search","x":-1700,"y":-60,"width":320,"height":140},
+		{"id":"63f7642e73e74cc7","type":"text","text":"como definir os melhores index para criar e quais não criar\n e como isso afeta a ram do banco","x":-2250,"y":-60,"width":320,"height":140},
+		{"id":"f9589971ce5a2459","type":"text","text":"fazer um teste de stress","x":-1027,"y":212,"width":245,"height":132},
+		{"id":"7f997c23e0f180d9","type":"text","text":"juntar querys ","x":-782,"y":-230,"width":250,"height":60},
+		{"id":"d779797c79e1b81e","type":"text","text":"faz os graficos de diferença de uso de banco e uso de tempo ","x":-695,"y":204,"width":327,"height":148},
+		{"id":"3f9cf5096897890e","type":"text","text":"No overfetch","x":-1555,"y":418,"width":310,"height":142},
+		{"id":"c9b9f0e92757b135","type":"text","text":"index normal,index gin e outros tipos de index","x":-1673,"y":173,"width":267,"height":105},
+		{"id":"faaedb248c41e368","type":"text","text":"many_to_one\nfk","x":-3000,"y":38,"width":250,"height":80},
+		{"id":"6caab0ddda9c83a8","type":"text","text":"many_to_one\nfk","x":-3000,"y":198,"width":250,"height":80},
+		{"id":"074c623263bf5a7e","type":"text","text":"one_to_one\nfk","x":-2975,"y":458,"width":250,"height":60},
+		{"id":"2148e87b06babc2f","type":"text","text":"one_to_one","x":-2675,"y":458,"width":250,"height":60},
+		{"id":"25dfc772b1f443c8","type":"text","text":"one_to_many","x":-2550,"y":126,"width":250,"height":145},
+		{"id":"96becd1c22f42ddd","type":"text","text":"como analisar querys","x":-2055,"y":388,"width":250,"height":60},
+		{"id":"067496fcba1e4618","type":"text","text":"usar keyword EXPLAIN ","x":-2055,"y":521,"width":250,"height":60},
+		{"id":"c5342ebb0355d1b8","type":"text","text":"fazer uma api com um Prisma \n\nsem index nos many_to_one","x":-1064,"y":-60,"width":320,"height":155},
+		{"id":"242f6534a8b9a418","type":"file","file":"postgress_optimize/postgres-optimization-api.canvas","x":280,"y":-390,"width":400,"height":400},
+		{"id":"20aa844fd1d087e9","type":"text","text":"sugestão: \n\tFazer uma [[postgres-optimization-api.canvas|api]] onde existe um usuario e esse usuario tem varios cards e esse card tem varias tasks","x":-340,"y":-280,"width":431,"height":180}
+	],
+	"edges":[
+		{"id":"ac709855aa63a5e6","fromNode":"faaedb248c41e368","fromSide":"right","toNode":"25dfc772b1f443c8","toSide":"left"},
+		{"id":"aa542f91d35e1db4","fromNode":"6caab0ddda9c83a8","fromSide":"right","toNode":"25dfc772b1f443c8","toSide":"left"},
+		{"id":"c38fe937aa4e305f","fromNode":"074c623263bf5a7e","fromSide":"right","toNode":"2148e87b06babc2f","toSide":"left"},
+		{"id":"2645c5ee00eeb91b","fromNode":"c5342ebb0355d1b8","fromSide":"bottom","toNode":"f9589971ce5a2459","toSide":"top"},
+		{"id":"737f77fe455b7586","fromNode":"f9589971ce5a2459","fromSide":"right","toNode":"d779797c79e1b81e","toSide":"left"},
+		{"id":"9af264487d2f3a26","fromNode":"b10c9160c1f6310b","fromSide":"bottom","toNode":"c9b9f0e92757b135","toSide":"top"},
+		{"id":"8448a77a4e1a9a2d","fromNode":"c5342ebb0355d1b8","fromSide":"right","toNode":"7f997c23e0f180d9","toSide":"bottom"},
+		{"id":"401bb17216789424","fromNode":"7f997c23e0f180d9","fromSide":"right","toNode":"20aa844fd1d087e9","toSide":"left"},
+		{"id":"e4983f5157e532e0","fromNode":"96becd1c22f42ddd","fromSide":"bottom","toNode":"067496fcba1e4618","toSide":"top"},
+		{"id":"532aac44307c027f","fromNode":"20aa844fd1d087e9","fromSide":"right","toNode":"242f6534a8b9a418","toSide":"left"}
+	]
+}
