@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:14.17-bookworm
+    volumes:
+      - pgdata:/var/lib/postgresql/data 
+    environment:
+      POSTGRES_PASSWORD: optmize
+
+  adminer:
+    image: adminer
+    ports:
+    - 8080:8080
+    
+volumes:
+  pgdata:
