@@ -1,12 +1,12 @@
 {
 	"nodes":[
-		{"id":"dc0999a7cf2dac06","type":"text","text":"#### Diagrama\n\nhttps://dbdocs.io/senhor_dois_monitores/postgress-optimization\n\nSenha: asdfasdf","x":-1060,"y":-620,"width":380,"height":180},
 		{"id":"09446c42c115991f","type":"text","text":"#### Caso de Uso\n\nPegar todas as tasks pendentes dos cards ativos de um user\n","x":-540,"y":-610,"width":511,"height":170},
-		{"id":"540e28daa13f46d2","type":"text","text":"Python com Prisma\nver  [index com prisma](https://www.prisma.io/docs/orm/prisma-schema/data-model/indexes#example-using-sort-and-length-together)\n","x":-1460,"y":-575,"width":240,"height":100},
-		{"id":"e98d440ef0b5e0a8","type":"text","text":"Juntar query em uma só","x":-690,"y":-315,"width":300,"height":60},
-		{"id":"8f155499dd4aeda6","type":"text","text":"Usar index","x":-294,"y":-315,"width":250,"height":60},
-		{"id":"d6e687237665a8e9","type":"text","text":"Otimizações","x":-1020,"y":-315,"width":230,"height":55},
-		{"id":"35528616b50ed197","x":-1060,"y":-900,"width":380,"height":202,"type":"text","text":"### Código:\n[github](https://github.com/seujorgenochurras/postgress-optimize)\n"}
+		{"id":"35528616b50ed197","type":"text","text":"### Código:\n[github](https://github.com/seujorgenochurras/postgress-optimize)\n","x":-1060,"y":-900,"width":380,"height":202},
+		{"id":"dc0999a7cf2dac06","type":"text","text":"#### Diagrama\n\nhttps://dbdocs.io/senhor_dois_monitores/postgress-optimization\n\nSenha: asdfasdf","x":-1060,"y":-610,"width":380,"height":180},
+		{"id":"540e28daa13f46d2","type":"text","text":"Python com Prisma\nver  [index com prisma](https://www.prisma.io/docs/orm/prisma-schema/data-model/indexes#example-using-sort-and-length-together)\n","x":-1360,"y":-610,"width":240,"height":100},
+		{"id":"d6e687237665a8e9","type":"text","text":"Otimizações","x":-1020,"y":-310,"width":230,"height":55},
+		{"id":"e98d440ef0b5e0a8","type":"text","text":"Juntar query em uma só","x":-680,"y":-312,"width":300,"height":60},
+		{"id":"8f155499dd4aeda6","type":"text","text":"Usar index","x":-320,"y":-312,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"8a618f531366e9bb","fromNode":"dc0999a7cf2dac06","fromSide":"right","toNode":"09446c42c115991f","toSide":"left"},
