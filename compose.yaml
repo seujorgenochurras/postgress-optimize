@@ -5,6 +5,11 @@ services:
       - pgdata:/var/lib/postgresql/data 
     environment:
       POSTGRES_PASSWORD: optmize
+      POSTGRES_DB: optmize
+
+    ports:
+      - 6968:5432
+    
 
   adminer:
     image: adminer
