@@ -26,6 +26,7 @@ model Card {
 
 model Task {
   id Int @id @default(autoincrement())
+  description String
   card Card @relation(fields: [cardId], references: [id])
   cardId Int
   status TaskStatus @default(TODO)
