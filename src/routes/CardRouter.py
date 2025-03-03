@@ -8,6 +8,6 @@ router = APIRouter(prefix="/card", tags=["card"])
 
 card_service = Resolve(CardService)
 
-@router.post("/card", response_model=CardWithoutRelation) 
+@router.post("/", response_model=CardWithoutRelation) 
 async def create_card(create_card_dto: CreateCardDto):
     return await card_service().create(create_card_dto.user_id, create_card_dto.title)
