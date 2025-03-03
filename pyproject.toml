@@ -12,6 +12,7 @@ dependencies = [
     "kink>=0.8.1",
     "ruff>=0.9.9",
     "uvicorn>=0.34.0",
+    "scalar-fastapi>=1.0.3",
 ]
 
 requires-python = "==3.12.*"
