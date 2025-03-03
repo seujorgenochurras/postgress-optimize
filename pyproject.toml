@@ -9,6 +9,7 @@ authors = [
 dependencies = [
     "prisma>=0.15.0",
     "fastapi>=0.115.11",
+    "kink>=0.8.1",
     "ruff>=0.9.9",
     "uvicorn>=0.34.0",
 ]
