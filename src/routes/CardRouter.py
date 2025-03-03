@@ -4,7 +4,7 @@ from src.dto.CreateCardDto import CreateCardDto
 from src.injector import Resolve
 from src.service.CardService import CardService
 
-router = APIRouter()
+router = APIRouter(prefix="/card", tags=["card"])
 
 card_service = Resolve(CardService)
 
