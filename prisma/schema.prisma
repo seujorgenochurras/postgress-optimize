@@ -13,15 +13,18 @@ model User {
   name String
   email String @unique
   cards Card[]
+
 }
 
 model Card {
   id Int @id @default(autoincrement())
   title String
   user User @relation(fields: [userId], references: [id])
-  active Boolean @default(false)
+  active Boolean @default(true)
   userId Int
   tasks Task[]
+
+  @@index([active, userId])
 }
 
 model Task {
@@ -30,6 +33,8 @@ model Task {
   card Card @relation(fields: [cardId], references: [id])
   cardId Int
   status TaskStatus @default(TODO)
+
+  @@index([cardId, status])
 }
 
 enum TaskStatus {
