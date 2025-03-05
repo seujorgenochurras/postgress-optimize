@@ -1,16 +1,19 @@
 services:
   db:
-    image: postgres:14.17-bookworm
+    build:
+      context: db
+      dockerfile: Dockerfile    
+
     volumes:
       - pgdata:/var/lib/postgresql/data 
     environment:
-      POSTGRES_PASSWORD: optmize
-      POSTGRES_DB: optmize
+      POSTGRES_PASSWORD: optimize
+      POSTGRES_DB: optimize
+    command: ["postgres", "-c", "log_statement=all"]
 
     ports:
       - 6968:5432
     
-
   adminer:
     image: adminer
     ports:
