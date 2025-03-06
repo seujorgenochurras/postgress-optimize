@@ -21,7 +21,7 @@ app = FastAPI(lifespan=lifespan)
 # TODO: get this shit out of here
 @app.get("/api/scalar", include_in_schema=False)
 def scalar():
-    return get_scalar_api_reference(openapi_url=app.openapi_url, title=app.title) # type: ignore
+    return get_scalar_api_reference(openapi_url=app.openapi_url, title=app.title)  # type: ignore
 
 
 app.include_router(router=main_router)
