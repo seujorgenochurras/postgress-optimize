@@ -24,7 +24,6 @@ model Card {
   userId Int
   tasks Task[]
 
-  @@index([active, userId])
 }
 
 model Task {
@@ -34,7 +33,6 @@ model Task {
   cardId Int
   status TaskStatus @default(TODO)
 
-  @@index([cardId, status])
 }
 
 enum TaskStatus {
