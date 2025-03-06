@@ -3,7 +3,7 @@ from src.repository.AbstractRepository import AbstractRepository
 from prisma.types import TaskCreateInput
 from prisma.enums import TaskStatus
 from prisma.partials import SimpleTask
-
+from prisma.models import User
 
 @Injector(alias=AbstractRepository)
 class TaskRepository(AbstractRepository):
@@ -15,5 +15,27 @@ class TaskRepository(AbstractRepository):
             where={
                 "card": {"is": {"active": True, "user": {"is": {"id": user_id}}}},
                 "status": status,
-            }
+            },
         )
+
+    async def find_status_by_user_slow(self, user_id : int, status : TaskStatus):
+        return await User.prisma().find_first(
+            where={"id" : user_id},
+            include={
+            "cards": {
+                "where": {
+                    "userId" : user_id,
+                    "active": True,
+                },
+                 "include": {
+                     "tasks": {
+                         "where": {
+                             "status": status
+                         }
+                     }
+                     
+                 }
+                
+            },
+            
+        })

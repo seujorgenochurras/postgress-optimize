@@ -23,3 +23,7 @@ async def create_user(user: CreateUserDto):
 @router.get("/{user_id}/task")
 async def get_pending_tasks(user_id: int):
     return await user_service().find_tasks(user_id, status=TaskStatus.TODO)
+
+@router.get("/{user_id}/task/slow")
+async def get_pending_tasks_slow(user_id: int):
+    return await user_service().find_tasks_slow(user_id, status=TaskStatus.TODO)
