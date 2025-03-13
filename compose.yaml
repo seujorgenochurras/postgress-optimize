@@ -1,19 +1,21 @@
 services:
   db:
-    build:
-      context: db
-      dockerfile: Dockerfile    
-
+    image: teste
     volumes:
-      - pgdata:/var/lib/postgresql/data 
+      - pgdata:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: optimize
       POSTGRES_DB: optimize
-    command: ["postgres", "-c", "log_statement=all"]
+      POSTGRES_USER: optimize
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 500M
 
+    command: ["postgres", "-c", "log_statement=all"]
     ports:
-      - 6968:5432
- 
-    
+      - 5432:5432
+
 volumes:
   pgdata:
